@@ -3,12 +3,12 @@ function getCity() {
   return city;
 }
 
-function showIcons() {
-  const windIcon = document.getElementById("wind-icon");
-  const humidityIcon = document.getElementById("humidity-icon");
-
-  windIcon.style.display = "inline";
-  humidityIcon.style.display = "inline";
+function showCardFooter() {
+  const dataContainer = document.getElementById("card-footer");
+  dataContainer.style.display = "flex";
+  dataContainer.style.justifyContent = "center";
+  dataContainer.style.gap = "5rem";
+  dataContainer.style.margin = "1rem";
 }
 
 async function fetchData() {
@@ -51,7 +51,7 @@ async function fetchData() {
     const weatherIconElement = document.getElementById("weather-icon");
     weatherIconElement.src = `https://openweathermap.org/img/wn/${weatherIconId}@2x.png`;
 
-    showIcons();
+    showCardFooter();
   } catch (error) {
     console.error(error);
   }
