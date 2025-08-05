@@ -1,8 +1,3 @@
-function getCity() {
-  const city = document.getElementById("search-bar-input").value;
-  return city;
-}
-
 function showCardFooter() {
   const dataContainer = document.getElementById("card-footer");
   dataContainer.style.display = "flex";
@@ -13,8 +8,8 @@ function showCardFooter() {
 
 async function fetchData() {
   try {
-    const city = getCity();
-    const apiKey = your_open_weather_api_key; // Change this line to your real API Key
+    const city = document.getElementById("search-bar-input").value;
+    // const apiKey = your_open_weather_api_key; // Change this line to your real API Key
 
     const response = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric`
