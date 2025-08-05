@@ -27,10 +27,7 @@ body {
 }
 
 #card-footer {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  margin: 1rem;
+  display: none;
 }
 
 #wind-icon,
@@ -43,9 +40,4 @@ body {
 #wind-text,
 #humidity-text {
   margin-top: 0px;
-}
-
-#wind-icon,
-#humidity-icon {
-  display: none;
 }
