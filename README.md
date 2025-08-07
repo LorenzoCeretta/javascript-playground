@@ -12,6 +12,6 @@ A classic first example to understand fetching data with vanilla JavaScript.
 
 ### Weather App
 
-A simple page to search for a city's current weather. It was created to understand initial DOM manipulation and more advanced data fetching with JavaScript.
+A simple page to search for a city's current weather. It was created to understand initial DOM manipulation and more data fetching with JavaScript.
 
 - Reference: https://youtu.be/MIYQR-Ybrn4?si=0NvmJQKX17JyOKWA
